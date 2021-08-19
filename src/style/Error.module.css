@@ -3,14 +3,6 @@
   flex-direction: column;
 }
 
-.image {
-  padding-top: 3rem;
-  width: 30%;
-  margin: 0 auto;
-  transform: translateY(2px);
-  z-index: 0;
-}
-
 .error {
   background-color: #e6e6e6;
   width: 60%;
@@ -26,9 +18,6 @@
   .error {
     font-size: 2rem;
   }
-  .image {
-    width: 50%;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -38,9 +27,6 @@
   .error {
     font-size: 1.5rem;
     width: 75%;
-  }
-  .image {
-    width: 60%;
   }
 }
 

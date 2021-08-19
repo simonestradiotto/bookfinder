@@ -31,12 +31,9 @@ export function Form() {
       let booksArray = data.data.items.map((item) => {
         return item.volumeInfo;
       });
-      console.log(booksArray);
       setBook(booksArray);
     } catch (err) {
       history.push({ pathname: "../pages/Error", state: { err } });
-
-      console.log(err);
     } finally {
       setLoading(false);
     }

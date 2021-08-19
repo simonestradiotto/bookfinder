@@ -21,7 +21,6 @@ export function SingleBook() {
           : index) === state.id
       );
     });
-    console.log(book);
   }
 
   return (
