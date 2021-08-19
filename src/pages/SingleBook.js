@@ -3,12 +3,16 @@ import styles from "../style/SingleBook.module.css";
 import { Link, useLocation } from "react-router-dom";
 import { BooksContext } from "../store/BooksContext";
 
+//The focus page for the single book
+
 export function SingleBook() {
   const books = useContext(BooksContext);
   const location = useLocation();
   const state = location.state;
 
   let book;
+
+  //Finding the book in the global context using the industry identifier or the index
 
   if (books.books.length) {
     book = books.books.find((book, index) => {

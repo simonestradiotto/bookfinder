@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../style/Introduction.module.css";
 
+//Component for the site introduction
+
 export function Introducion() {
   return (
     <div className={styles.container}>

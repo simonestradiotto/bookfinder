@@ -2,11 +2,15 @@ import React from "react";
 import styles from "../style/Book.module.css";
 import { Link } from "react-router-dom";
 
+//Component for a single book in the Booklist
+
 export function Book(props) {
+  //Format the authors prop if the authors are more than one
   const authors = props.authors?.toString().replace(/,/g, ", ");
 
   return (
     <div className={styles.book}>
+      {/* Wrapping the entire book in a link for the SingleBook page*/}
       <Link
         to={{
           pathname: "/SingleBook",

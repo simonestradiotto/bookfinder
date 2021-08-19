@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../style/Error.module.css";
 
+//The error page. Rendered if the search produced no results or the path of the page is unknown
+
 export function Error() {
   const location = useLocation();
   const state = location.state;

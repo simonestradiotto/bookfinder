@@ -8,7 +8,10 @@
 }
 
 .book {
-  background-color: #fff;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
   border-radius: 4px;
   width: 70%;
   display: grid;
@@ -80,6 +83,7 @@
 .subtitle {
   font-size: 2rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 
 .publisher {
@@ -96,8 +100,8 @@
   margin: 0 auto;
   text-align: left;
   width: 98%;
-  border-top: 1px solid #ced4da;
-  border-bottom: 1px solid #ced4da;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   line-height: 2rem;
 }
 

@@ -4,14 +4,20 @@ import styles from "../style/Form.module.css";
 import { BooksContext } from "../store/BooksContext";
 import { useHistory } from "react-router-dom";
 
+//Component for the form in the Home
+
 export function Form() {
   const [value, setValue] = useState("");
   const { setBook, setLoading } = useContext(BooksContext);
   const history = useHistory();
 
+  //The value for the controlled input
+
   function changeHandler(e) {
     setValue(e.target.value);
   }
+
+  //Fetching the data when the form is submitted
 
   async function formSubmit(e) {
     try {

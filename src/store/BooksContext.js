@@ -1,5 +1,7 @@
 import React, { useState, createContext } from "react";
 
+//The global context for the application
+
 export const BooksContext = createContext();
 
 export function BooksProvider(props) {

@@ -8,6 +8,8 @@ import { Footer } from "./components/Footer";
 import { Error } from "./pages/Error";
 
 function App() {
+  //Styling the html, the body and the root div
+
   useEffect(() => {
     let html = document.querySelector("html");
     let body = document.querySelector("body");
@@ -18,7 +20,7 @@ function App() {
     html.style.height = "100%";
     body.style.margin = "0";
     body.style.height = "100%";
-    html.style.backgroundColor = "#000";
+    body.style.backgroundColor = "#000";
     root.style.height = "100%";
   }, []);
 
