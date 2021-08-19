@@ -1,0 +1,27 @@
+.books_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.books_container a:visited {
+  color: #000;
+}
+
+.loading {
+  transform: translateY(-20rem);
+  font-size: 3rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1050px) {
+  .loading {
+    transform: translateY(-15rem);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .loading {
+    transform: translateY(-10rem);
+  }
+}

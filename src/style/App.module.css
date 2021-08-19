@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  font-family: "STIX Two Text", serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../images/books.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container *::selection {
+  background-color: #55271a;
+  color: #fff;
+}
